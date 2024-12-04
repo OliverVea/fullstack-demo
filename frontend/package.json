@@ -1,0 +1,13 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "A tiny front end for a tiny full stack project",
+  "scripts": {
+    "build": "tsc"
+  },
+  "author": "Oliver Vea",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.7.2"
+  }
+}

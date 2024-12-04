@@ -10,4 +10,7 @@ wheels/
 .venv
 
 # js generated files
-wwwroot/js
+**/wwwroot/js
+
+
+**/node_modules
