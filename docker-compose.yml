@@ -1,6 +1,7 @@
 
 services:
   api:
+    image: olivervea/fullstack-example-app:latest
     build:
       context: .
       dockerfile: "Dockerfile"

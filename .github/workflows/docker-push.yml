@@ -32,3 +32,4 @@ jobs:
           context: .
           push: true
           tags: ${{ vars.DOCKERHUB_USERNAME }}/fullstack-example-app:latest
+          platforms: linux/amd64,linux/arm64
