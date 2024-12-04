@@ -3,7 +3,7 @@ import random
 
 app = Flask(
     __name__,
-    static_folder='public',
+    static_folder='wwwroot',
     static_url_path='')
 
 @app.route('/')

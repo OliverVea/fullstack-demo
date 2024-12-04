@@ -1,0 +1,105 @@
+/* index.css */
+
+/* General body styling */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle, #1f1c2c, #928dab);
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    overflow: hidden;
+}
+
+/* Panel styling */
+.panel {
+    background: linear-gradient(145deg, #2e2c4c, #3d3b5f);
+    border-radius: 20px;
+    padding: 2rem;
+    width: 90%;
+    max-width: 450px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    position: relative;
+}
+
+/* Stylish glow effect around the panel */
+.panel::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    background: linear-gradient(145deg, #ff8a5c, #ff3e6c);
+    z-index: -1;
+    filter: blur(20px);
+    border-radius: 25px;
+}
+
+/* Text styling */
+.panel p {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #e0e0e0;
+}
+
+/* Highlight dynamic text */
+#number-field {
+    font-weight: 900;
+    font-size: 2.5rem;
+    color: #ff3e6c;
+    text-shadow: 0 0 10px rgba(255, 62, 108, 0.8), 0 0 20px rgba(255, 62, 108, 0.6);
+    animation: glow 1.5s infinite alternate;
+}
+
+/* Fancy button */
+button {
+    background: linear-gradient(145deg, #ff8a5c, #ff3e6c);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(255, 62, 108, 0.5), 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(255, 62, 108, 0.6), 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px rgba(255, 62, 108, 0.4), 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Subtle animations for the panel */
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.02);
+    }
+}
+
+.panel {
+    animation: pulse 6s infinite ease-in-out;
+}
+
+/* Glowing effect for the number */
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 10px rgba(62, 255, 108, 0.8), 0 0 20px rgba(62, 255, 108, 0.6);
+    }
+    100% {
+        text-shadow: 0 0 25px rgba(62, 255, 108, 1), 0 0 40px rgba(62, 255, 108, 0.9);
+    }
+}

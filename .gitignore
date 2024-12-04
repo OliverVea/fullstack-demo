@@ -8,3 +8,6 @@ wheels/
 
 # Virtual environments
 .venv
+
+# js generated files
+wwwroot/js
